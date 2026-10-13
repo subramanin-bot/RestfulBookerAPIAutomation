@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "AuthResponse",
+  "description": "Response of POST /auth when credentials are valid",
+  "type": "object",
+  "properties": {
+    "token": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": ["token"]
+}

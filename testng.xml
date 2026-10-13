@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!--
+    Suite definition used by both `mvn clean test` (via Surefire) and the IDE
+    (right-click -> Run As -> TestNG Suite). Reporting is wired up inside
+    BaseTest, so no <listeners> entry is needed.
+    Run a single group with:  mvn clean test -Dgroups=negative
+-->
+<suite name="RestfulBookerAPIAutomation" verbose="1">
+    <test name="Restful Booker API Tests">
+        <classes>
+            <class name="com.restfulbooker.tests.AuthTests"/>
+            <class name="com.restfulbooker.tests.CreateBookingTests"/>
+            <class name="com.restfulbooker.tests.GetBookingTests"/>
+            <class name="com.restfulbooker.tests.UpdateBookingTests"/>
+            <class name="com.restfulbooker.tests.PartialUpdateBookingTests"/>
+            <class name="com.restfulbooker.tests.DeleteBookingTests"/>
+            <class name="com.restfulbooker.tests.CrudLifecycleTests"/>
+            <class name="com.restfulbooker.tests.NegativeScenarioTests"/>
+        </classes>
+    </test>
+</suite>
